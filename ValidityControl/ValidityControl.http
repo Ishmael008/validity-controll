@@ -1,6 +1,0 @@
-@ValidityControl_HostAddress = http://localhost:5077
-
-GET {{ValidityControl_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
