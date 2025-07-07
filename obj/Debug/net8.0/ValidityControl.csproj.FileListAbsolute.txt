@@ -1,0 +1,7 @@
+C:\Users\Teste\source\repos\ValidityControl\obj\Debug\net8.0\ValidityControl.csproj.AssemblyReference.cache
+C:\Users\Teste\source\repos\ValidityControl\obj\Debug\net8.0\ValidityControl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Teste\source\repos\ValidityControl\obj\Debug\net8.0\ValidityControl.AssemblyInfoInputs.cache
+C:\Users\Teste\source\repos\ValidityControl\obj\Debug\net8.0\ValidityControl.AssemblyInfo.cs
+C:\Users\Teste\source\repos\ValidityControl\obj\Debug\net8.0\ValidityControl.csproj.CoreCompileInputs.cache
+C:\Users\Teste\source\repos\ValidityControl\obj\Debug\net8.0\ValidityControl.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Teste\source\repos\ValidityControl\obj\Debug\net8.0\ValidityControl.MvcApplicationPartsAssemblyInfo.cache
