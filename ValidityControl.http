@@ -1,0 +1,6 @@
+@ValidityControl_HostAddress = http://localhost:5155
+
+GET {{ValidityControl_HostAddress}}/validitycontrol/
+Accept: application/json
+
+###

@@ -1,0 +1,290 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|c:\\users\\teste\\source\\repos\\validitycontrol\\validitycontrol\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|c:\\users\\teste\\source\\repos\\validitycontrol\\validitycontrol\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|c:\\users\\teste\\source\\repos\\validitycontrol\\validitycontrol\\validitycontrol.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|solutionrelative:validitycontrol.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|c:\\users\\teste\\source\\repos\\validitycontrol\\validitycontrol\\domain\\models\\productcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|solutionrelative:domain\\models\\productcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|c:\\users\\teste\\source\\repos\\validitycontrol\\validitycontrol\\controllers\\v1\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|solutionrelative:controllers\\v1\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|c:\\users\\teste\\source\\repos\\validitycontrol\\validitycontrol\\domain\\models\\iproductcontrolrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|solutionrelative:domain\\models\\iproductcontrolrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|c:\\users\\teste\\source\\repos\\validitycontrol\\validitycontrol\\domain\\models\\iusuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|solutionrelative:domain\\models\\iusuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|c:\\users\\teste\\source\\repos\\validitycontrol\\validitycontrol\\domain\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|solutionrelative:domain\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|c:\\users\\teste\\source\\repos\\validitycontrol\\validitycontrol\\infraestrutura\\repositories\\usuariorespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|solutionrelative:infraestrutura\\repositories\\usuariorespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|c:\\users\\teste\\source\\repos\\validitycontrol\\validitycontrol\\infraestrutura\\repositories\\productcontrolrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|solutionrelative:infraestrutura\\repositories\\productcontrolrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|c:\\users\\teste\\source\\repos\\validitycontrol\\validitycontrol\\infraestrutura\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|solutionrelative:infraestrutura\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|c:\\users\\teste\\source\\repos\\validitycontrol\\validitycontrol\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|solutionrelative:key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|c:\\users\\teste\\source\\repos\\validitycontrol\\validitycontrol\\swagguer\\configureswaggueroption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|solutionrelative:swagguer\\configureswaggueroption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|c:\\users\\teste\\source\\repos\\validitycontrol\\validitycontrol\\controllers\\service\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|solutionrelative:controllers\\service\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|c:\\users\\teste\\source\\repos\\validitycontrol\\validitycontrol\\validitycontrol.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{D89A98BA-3684-41E5-8FD3-814FDB3A4CDC}|ValidityControl.csproj|solutionrelative:validitycontrol.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d84ee353-0bef-5a41-a649-8f89aca5d84d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUsuarioRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\DoMain\\Models\\IUsuarioRepositorio.cs",
+              "RelativeDocumentMoniker": "DoMain\\Models\\IUsuarioRepositorio.cs",
+              "ToolTip": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\DoMain\\Models\\IUsuarioRepositorio.cs",
+              "RelativeToolTip": "DoMain\\Models\\IUsuarioRepositorio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T00:32:14.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UsuarioModel.cs",
+              "DocumentMoniker": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\DoMain\\Models\\UsuarioModel.cs",
+              "RelativeDocumentMoniker": "DoMain\\Models\\UsuarioModel.cs",
+              "ToolTip": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\DoMain\\Models\\UsuarioModel.cs",
+              "RelativeToolTip": "DoMain\\Models\\UsuarioModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T00:32:08.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsuarioRespository.cs",
+              "DocumentMoniker": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\Infraestrutura\\Repositories\\UsuarioRespository.cs",
+              "RelativeDocumentMoniker": "Infraestrutura\\Repositories\\UsuarioRespository.cs",
+              "ToolTip": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\Infraestrutura\\Repositories\\UsuarioRespository.cs",
+              "RelativeToolTip": "Infraestrutura\\Repositories\\UsuarioRespository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T00:17:58.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductControl.cs",
+              "DocumentMoniker": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\DoMain\\Models\\ProductControl.cs",
+              "RelativeDocumentMoniker": "DoMain\\Models\\ProductControl.cs",
+              "ToolTip": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\DoMain\\Models\\ProductControl.cs",
+              "RelativeToolTip": "DoMain\\Models\\ProductControl.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T17:00:48.858Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductControlRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\Infraestrutura\\Repositories\\ProductControlRepository.cs",
+              "RelativeDocumentMoniker": "Infraestrutura\\Repositories\\ProductControlRepository.cs",
+              "ToolTip": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\Infraestrutura\\Repositories\\ProductControlRepository.cs",
+              "RelativeToolTip": "Infraestrutura\\Repositories\\ProductControlRepository.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T17:49:34.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAwF4AAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T16:59:40.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\Infraestrutura\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Infraestrutura\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\Infraestrutura\\AppDbContext.cs",
+              "RelativeToolTip": "Infraestrutura\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T00:15:17.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ValidityControl.csproj",
+              "DocumentMoniker": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\ValidityControl.csproj",
+              "RelativeDocumentMoniker": "ValidityControl.csproj",
+              "ToolTip": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\ValidityControl.csproj",
+              "RelativeToolTip": "ValidityControl.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-08T17:55:04.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-09T01:04:47.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IProductControlRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\DoMain\\Models\\IProductControlRepository.cs",
+              "RelativeDocumentMoniker": "DoMain\\Models\\IProductControlRepository.cs",
+              "ToolTip": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\DoMain\\Models\\IProductControlRepository.cs",
+              "RelativeToolTip": "DoMain\\Models\\IProductControlRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T00:32:15.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\Controllers\\v1\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\v1\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\Controllers\\v1\\UsuarioController.cs",
+              "RelativeToolTip": "Controllers\\v1\\UsuarioController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-09T00:32:25.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Microsoft.NET.TargetFrameworkInference.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.TargetFrameworkInference.targets",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAYwKUAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-07-08T18:17:47.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ConfigureSwagguerOption.cs",
+              "DocumentMoniker": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\Swagguer\\ConfigureSwagguerOption.cs",
+              "RelativeDocumentMoniker": "Swagguer\\ConfigureSwagguerOption.cs",
+              "ToolTip": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\Swagguer\\ConfigureSwagguerOption.cs",
+              "RelativeToolTip": "Swagguer\\ConfigureSwagguerOption.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T17:47:05.134Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\Controllers\\Service\\TokenService.cs",
+              "RelativeDocumentMoniker": "Controllers\\Service\\TokenService.cs",
+              "ToolTip": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\Controllers\\Service\\TokenService.cs",
+              "RelativeToolTip": "Controllers\\Service\\TokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T17:13:43.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Key.cs",
+              "DocumentMoniker": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\Key.cs",
+              "RelativeDocumentMoniker": "Key.cs",
+              "ToolTip": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\Key.cs",
+              "RelativeToolTip": "Key.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-08T17:07:59.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ValidityControl",
+              "DocumentMoniker": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\ValidityControl.csproj",
+              "RelativeDocumentMoniker": "ValidityControl.csproj",
+              "ToolTip": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\ValidityControl.csproj",
+              "RelativeToolTip": "ValidityControl.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-08T16:59:19.07Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
