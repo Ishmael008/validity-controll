@@ -1,3 +1,4 @@
+
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -10,6 +11,21 @@ using ValidityControl.Application.ViewModel;
 using ValidityControl.Application.ViewModel;
 using ValidityControl.DoMain.Models;
 using ValidityControl.DoMain;
+
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Routing;
+using Microsoft.EntityFrameworkCore;
+using System.Reflection.Metadata.Ecma335;
+using System.Threading;
+using ValidityControl.Application;
+using ValidityControl.Application.ViewModel;
+using ValidityControl.Application.ViewModel;
+using ValidityControl.DoMain;
+using ValidityControl.DoMain.Models;
+
 
 namespace ValidityControl.Controllers.v1
 {
@@ -31,9 +47,13 @@ namespace ValidityControl.Controllers.v1
         }
 
 
-         [HttpPost]
-         public IActionResult Post([FromBody] ProductControlCreateViewModel viewModel)
-         {
+
+
+
+        [Authorize]
+        [HttpPost]
+        public IActionResult Post([FromBody] ProductControlCreateViewModel viewModel)
+        {
             //check functionality
             /*Console.WriteLine("Recebido no backend:");
             Console.WriteLine($"EAN: {viewModel.eanOfProduct}");
@@ -59,18 +79,19 @@ namespace ValidityControl.Controllers.v1
             .FirstOrDefault(p => p.ean == viewModel.eanOfProduct);
 
             var entity = new ProductControl(viewModel.eanOfProduct, viewModel.nameOfProduct, viewModel.validity, viewModel.description)
-             {
-                 ean = viewModel.eanOfProduct,
-                 name = viewModel.nameOfProduct,
-                 Validity = viewModel.validity,
-                 description = viewModel.description
+            {
+                ean = viewModel.eanOfProduct,
+                name = viewModel.nameOfProduct,
+                Validity = viewModel.validity,
+                description = viewModel.description
             };
 
-             _productcontrolrepository.Add(entity);
+            _productcontrolrepository.Add(entity);
 
+            return Ok();
+        }
+      
 
-             return Ok();
-         }
 
 
         [HttpGet("products-today")]
@@ -80,7 +101,11 @@ namespace ValidityControl.Controllers.v1
 
             return _productcontrolrepository.GetProductsToday()
                 .Where(p => p.Validity >= hoje)
+
                 .OrderBy(p => p.Validity)       
+
+                .OrderBy(p => p.Validity)
+
                 .Select(p => new ProductControlViewModel(p))
                 .ToList();
         }
@@ -96,7 +121,7 @@ namespace ValidityControl.Controllers.v1
         public IActionResult RemoveProduct()
         {
             _productcontrolrepository.RemoveProduct();
-           
+
             return Ok("Product removed successfully");
 
         }

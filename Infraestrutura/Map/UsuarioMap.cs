@@ -11,7 +11,10 @@ namespace ValidityControl.Infraestrutura.Map
         {
             builder.HasKey(x => x.id);
             builder.Property(x => x.name).IsRequired();
-            builder.Property(x => x.email).IsRequired();
+
+
+            builder.Property(x => x.password).IsRequired();
+
         }
     }
 }

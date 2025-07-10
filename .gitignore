@@ -1,1 +1,34 @@
+﻿# Visual Studio
 .vs/
+*.user
+*.suo
+
+# Build
+bin/
+obj/
+*.dll
+*.pdb
+*.cache
+*.log
+
+# Outros arquivos gerados automaticamente
+*.sqlite
+*.v8.bin
+*.db
+*.mdf
+*.ldf
+
+# Ignora todos os JSONs exceto os que você quer manter
+# (como appsettings.json)
+*.json
+!appsettings.json
+!appsettings.Development.json
+
+# Node.js
+node_modules/
+
+# Arquivos do sistema
+Thumbs.db
+ehthumbs.db
+.DS_Store
+*.swp

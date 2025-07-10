@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\",
   "Documents": [
     {
@@ -119,6 +120,10 @@
       "RelativeMoniker": "D:0:0:{9BAE6B52-AD2F-413D-BA08-F3BB1320A373}|ValidityControl\\ValidityControl.csproj|solutionrelative:validitycontrol\\key.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
+=======
+  "WorkspaceRootPath": "C:\\Users\\Teste\\source\\repos\\ValidityControl\\ValidityControl\\",
+  "Documents": [],
+>>>>>>> a3f0c3a (Atualização do projeto ValidityControl)
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -126,6 +131,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 14,
           "Children": [
             {
@@ -142,6 +148,11 @@
               "IsPinned": true
             },
             {
+=======
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+>>>>>>> a3f0c3a (Atualização do projeto ValidityControl)
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
@@ -152,6 +163,7 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d84ee353-0bef-5a41-a649-8f89aca5d84d}"
+<<<<<<< HEAD
             },
             {
               "$type": "Document",
@@ -488,6 +500,8 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-28T21:58:47.784Z"
+=======
+>>>>>>> a3f0c3a (Atualização do projeto ValidityControl)
             }
           ]
         }

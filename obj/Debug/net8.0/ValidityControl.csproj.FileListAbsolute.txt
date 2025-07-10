@@ -30,9 +30,30 @@ C:\Users\Teste\source\repos\ValidityControl\ValidityControl\obj\Debug\net8.0\ref
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\obj\Debug\net8.0\ValidityControl.pdb
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\obj\Debug\net8.0\ValidityControl.genruntimeconfig.cache
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\obj\Debug\net8.0\ref\ValidityControl.dll
+<<<<<<< HEAD
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Humanizer.dll
+=======
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Aiwins.Rocket.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Aiwins.Rocket.Core.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Aiwins.Rocket.Security.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Dapper.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Hangfire.AspNetCore.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Hangfire.Console.Extensions.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Hangfire.Core.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Hangfire.NetCore.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Hangfire.PostgreSql.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Hangfire.PostgreSql.NetCore.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Hangfire.SqlServer.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\IdentityStream.Hangfire.Console.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\JetBrains.Annotations.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\JWT.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
+>>>>>>> a3f0c3a (Atualização do projeto ValidityControl)
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.Build.Locator.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -41,12 +62,18 @@ C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Mic
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+<<<<<<< HEAD
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+=======
+>>>>>>> a3f0c3a (Atualização do projeto ValidityControl)
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+<<<<<<< HEAD
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+=======
+>>>>>>> a3f0c3a (Atualização do projeto ValidityControl)
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
@@ -57,26 +84,42 @@ C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Mic
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+<<<<<<< HEAD
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+=======
+>>>>>>> a3f0c3a (Atualização do projeto ValidityControl)
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+<<<<<<< HEAD
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Npgsql.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.ClientModel.dll
+=======
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Nito.AsyncEx.Context.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Nito.AsyncEx.Coordination.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Nito.AsyncEx.Tasks.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Nito.Collections.Deque.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Nito.Disposables.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Npgsql.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+>>>>>>> a3f0c3a (Atualização do projeto ValidityControl)
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.Composition.Convention.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.Composition.Hosting.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.Composition.Runtime.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.Composition.TypedParts.dll
+<<<<<<< HEAD
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.Drawing.Common.dll
@@ -90,6 +133,28 @@ C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\Sys
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.Text.Json.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.Windows.Extensions.dll
+=======
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.Linq.Dynamic.Core.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\ca\Hangfire.Core.resources.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\de\Hangfire.Core.resources.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\es\Hangfire.Core.resources.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\fa\Hangfire.Core.resources.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\fr\Hangfire.Core.resources.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\nb\Hangfire.Core.resources.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\nl\Hangfire.Core.resources.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\pt-BR\Hangfire.Core.resources.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\pt-PT\Hangfire.Core.resources.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\pt\Hangfire.Core.resources.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\sv\Hangfire.Core.resources.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\tr-TR\Hangfire.Core.resources.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\zh-TW\Hangfire.Core.resources.dll
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\zh\Hangfire.Core.resources.dll
+>>>>>>> a3f0c3a (Atualização do projeto ValidityControl)
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -155,6 +220,7 @@ C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\ru\
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+<<<<<<< HEAD
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
@@ -202,3 +268,6 @@ C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\sv\
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\tr-TR\Hangfire.Core.resources.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\zh-TW\Hangfire.Core.resources.dll
 C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\zh\Hangfire.Core.resources.dll
+=======
+C:\Users\Teste\source\repos\ValidityControl\ValidityControl\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+>>>>>>> a3f0c3a (Atualização do projeto ValidityControl)

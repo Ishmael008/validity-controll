@@ -5,6 +5,7 @@ namespace ValidityControl.Application.ViewModel
     public class ProductControlCreateViewModel
     {
 
+
         
             [JsonPropertyName("ean")]
             public string eanOfProduct { get; set; }
@@ -18,6 +19,7 @@ namespace ValidityControl.Application.ViewModel
             [JsonPropertyName("description")]
             public string description { get; set; }
         
+
 
 
     }

@@ -1,5 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
+
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 using System.Text.Json.Serialization;
 
 namespace ValidityControl.DoMain.Models
@@ -12,15 +14,21 @@ namespace ValidityControl.DoMain.Models
         public int? id { get; private set; }
         [JsonPropertyName("nome")]
         public string? name { get; private set; }
-        [JsonPropertyName("email")]
-        public string? email { get; private set; }
+
+
+        
+        
+        [JsonPropertyName("password")]
+        public string password { get; private set; }
+        
 
         public UsuarioModel() { }
-        public UsuarioModel( string name, string email)
+        public UsuarioModel(string name,  string password)
         {
-            
+
             this.name = name;
-            this.email = email;
+            this.password = password;
+
         }
     }
 }

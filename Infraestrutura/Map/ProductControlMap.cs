@@ -11,7 +11,11 @@ namespace ValidityControl.Infraestrutura.Map
         {
             builder.HasKey(x => x.ean);
             builder.Property(x => x.Validity).IsRequired();
+<<<<<<< HEAD
                     }
+=======
+        }
+>>>>>>> a3f0c3a (Atualização do projeto ValidityControl)
     }
 }
 

@@ -1,3 +1,4 @@
+
 ﻿using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -13,6 +14,13 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Hangfire;
 using Hangfire.PostgreSql;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using System.Text;
+using Microsoft.EntityFrameworkCore;
+using ValidityControl.Infraestrutura;
 
 internal class Program
 {
@@ -67,13 +75,10 @@ internal class Program
             setup.GroupNameFormat = "'v'VVV";
             setup.SubstituteApiVersionInUrl = true;
         });
-
-        // Repositórios
         builder.Services.AddTransient<IUsuarioRepository, UsuarioRespository>();
         builder.Services.AddTransient<IProductControlRepository, ProductControlRepository>();
         builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwagguerOptions>();
 
-        // Hangfire com PostgreSQL (corrigido Database)
         builder.Services.AddHangfire(config =>
             config.UsePostgreSqlStorage("Host=localhost;" +
                 "Port=5432;" +
@@ -86,12 +91,25 @@ internal class Program
         // Autenticação JWT
         var key = Encoding.ASCII.GetBytes(Key.Secret);
 
+
+
+        builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
+
+     
+
+
         builder.Services.AddCors(options =>
         {
             options.AddPolicy(name: "MyPolicy",
                 policy =>
                 {
+
                     policy.WithOrigins("http://localhost:8082")
+
+
                         .AllowAnyHeader()
                         .AllowAnyMethod();
                 });
@@ -107,6 +125,9 @@ internal class Program
             x.SaveToken = true;
             x.TokenValidationParameters = new TokenValidationParameters
             {
+
+                ValidateLifetime = true,
+
                 ValidateIssuerSigningKey = true,
                 IssuerSigningKey = new SymmetricSecurityKey(key),
                 ValidateIssuer = false,
@@ -118,7 +139,8 @@ internal class Program
 
         var versionDescriptionProvider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
 
-        // Pipeline HTTP
+
+
         if (app.Environment.IsDevelopment())
         {
             app.UseExceptionHandler("/erro-development");
@@ -141,11 +163,13 @@ internal class Program
         app.UseHttpsRedirection();
         app.UseAuthentication();
         app.UseAuthorization();
-
-        // Hangfire Dashboard (visível em /hangfire)
         app.UseHangfireDashboard();
 
-        // Job Recorrente - Executado diariamente
+
+
+        app.UseHangfireDashboard();
+
+
         RecurringJob.AddOrUpdate<IProductControlRepository>(
             "Remove-products",
             repo => repo.RemoveProduct(),
@@ -156,3 +180,6 @@ internal class Program
         app.Run();
     }
 }
+
+
+

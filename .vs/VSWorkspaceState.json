@@ -1,9 +1,14 @@
 {
   "ExpandedNodes": [
+<<<<<<< HEAD
     "",
     "\\Properties",
     "\\ValidityControl"
   ],
   "SelectedNode": "\\Properties",
+=======
+    ""
+  ],
+>>>>>>> a3f0c3a (Atualização do projeto ValidityControl)
   "PreviewInSolutionExplorer": false
 }

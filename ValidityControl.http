@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 @ValidityControl_HostAddress = http://localhost:5077
 
 GET {{ValidityControl_HostAddress}}/weatherforecast/
+=======
+@ValidityControl_HostAddress = http://localhost:5155
+
+GET {{ValidityControl_HostAddress}}/validitycontrol/
+>>>>>>> a3f0c3a (Atualização do projeto ValidityControl)
 Accept: application/json
 
 ###

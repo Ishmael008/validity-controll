@@ -5,13 +5,21 @@ using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using ValidityControl.DoMain;
 using System.Linq.Dynamic.Core;
 
+
+
+
+
 namespace ValidityControl.Infraestrutura.Repositories
 {
     public class ProductControlRepository : IProductControlRepository
     {
-        private readonly ConnetionContext _context = new ConnetionContext();
+
        
         
+        private readonly AppDbContext _context;
+
+
+
 
         public void Add(ProductControl productControl)
         {
@@ -28,7 +36,7 @@ namespace ValidityControl.Infraestrutura.Repositories
         {
 
             return _context.productControls.ToList();
-           
+
         }
 
 
@@ -42,7 +50,10 @@ namespace ValidityControl.Infraestrutura.Repositories
         }
         public bool ExistsbyGet(string ean)
         {
+
             return _context.productControls.Any(i =>  i.ean == ean);
+
+           
         }
 
         public void RemoveProduct()
@@ -52,7 +63,9 @@ namespace ValidityControl.Infraestrutura.Repositories
             .Where(v => v.Validity < today)
             .ToList();
 
-            if(matury.Any())
+
+            if (matury.Any())
+
             {
                 _context.productControls.RemoveRange(matury);
                 _context.SaveChanges();

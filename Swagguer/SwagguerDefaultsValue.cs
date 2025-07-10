@@ -5,6 +5,7 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace ValidityControl.Swagguer
 {
+<<<<<<< HEAD
     public class SwagguerDefaultsValue:
    IOperationFilter
     {
@@ -37,6 +38,40 @@ namespace ValidityControl.Swagguer
         }
     }
 }
+=======
+    public class SwagguerDefaultsValue :
+   IOperationFilter
+    {
+        public void Apply(OpenApiOperation operation, OperationFilterContext context)
+        {
+            var apiDescription = context.ApiDescription;
+
+            operation.Deprecated |= apiDescription.IsDeprecated();
+
+            if (operation.Parameters == null)
+            {
+                return;
+            }
+
+            foreach (var parameter in operation.Parameters)
+            {
+                var description = apiDescription.ParameterDescriptions.First(p => p.Name == parameter.Name);
+
+                if (parameter.Description is null)
+                {
+                    parameter.Description = description.ModelMetadata?.Description;
+                }
+
+                if (parameter.Schema.Default is null && description.DefaultValue is not null)
+                {
+                    parameter.Schema.Default = new OpenApiString(description.DefaultValue.ToString());
+                }
+
+                parameter.Required |= description.IsRequired;
+            }
+        }
+    }
+>>>>>>> a3f0c3a (Atualização do projeto ValidityControl)
 
 
 }

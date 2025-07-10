@@ -8,10 +8,15 @@ using ValidityControl.DoMain.Models;
 namespace ValidityControl.Infraestrutura.Repositories
 {
 
+
+   
+        
+
     public class UsuarioRespository : IUsuarioRepository
     {
-        private readonly ConnetionContext _connetion = new ConnetionContext();
-        
+        private readonly AppDbContext _connetion;
+
+
 
         public void Add(UsuarioModel usuario)
         {
@@ -33,19 +38,26 @@ namespace ValidityControl.Infraestrutura.Repositories
         {
 
             return _connetion.usuarios.ToList();
+
                
             
         }
-        public UsuarioModel GetByNameAndEmail(string name, string email)
+       
+
+
+
+        
+        public UsuarioModel GetByNameAndPassword(string name, string password)
         {
-            return _connetion.usuarios.FirstOrDefault(u => u.name == name && u.email == email);
+            return _connetion.usuarios.FirstOrDefault(u => u.name == name && u.password == password);
+
         }
 
 
 
         public UsuarioModel GetForId(int id)
         {
-            
+
             return _connetion.usuarios.FirstOrDefault(x => x.id == id);
         }
     }

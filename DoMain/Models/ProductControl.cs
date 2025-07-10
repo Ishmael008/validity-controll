@@ -9,7 +9,9 @@ namespace ValidityControl.DoMain.Models
     {
 
         public string? ean { get; set; }
+
         public string name {  get; set; }
+
         [Column("validity")]
         public DateTime Validity
         {
@@ -17,9 +19,15 @@ namespace ValidityControl.DoMain.Models
             set => _validity = DateTime.SpecifyKind(value, DateTimeKind.Utc);
         }
         private DateTime _validity;
+
         public string description {  get; set; }
 
         
+
+
+
+
+
 
 
         public ProductControl(string ean, string name, DateTime validity, string description)

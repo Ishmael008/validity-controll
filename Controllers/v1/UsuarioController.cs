@@ -29,7 +29,10 @@ namespace ValidityControl.Controllers.v1
         [HttpPost]
         public IActionResult Add(UsuarioModelViewModel usuarioViewModel)
         {
-            var usuario = new UsuarioModel(usuarioViewModel.Name, usuarioViewModel.Email);
+
+
+            var usuario = new UsuarioModel(usuarioViewModel.Name, usuarioViewModel.Password);
+
             _usuarioRepository.Add(usuario);
 
             if (usuario == null)
@@ -38,25 +41,25 @@ namespace ValidityControl.Controllers.v1
             if (string.IsNullOrEmpty(usuario.name))
                 return BadRequest("O campo name é obrigatório");
 
+
+            if (string.IsNullOrEmpty(usuario.password))
+                return BadRequest("O campo name é obrigatório");
+
             return Ok(new { message = "Usuário cadastrado com sucesso!" });
 
 
         }
 
-        /*[Authorize]
-        [HttpGet]
-        public IActionResult Get()
-        {
-            _logger.Log(LogLevel.Error, "Houve um erro!");
-            var usuarios = _usuarioRepository.Get();
-            return Ok(usuarios);
-        }
-        */
+
+
+        
+
+    
 
         [HttpGet("validar")]
-        public IActionResult Validar(string name, string email)
+        public IActionResult Validar(string name, string password)
         {
-            var usuario = _usuarioRepository.GetByNameAndEmail(name, email);
+            var usuario = _usuarioRepository.GetByNameAndPassword(name, password);
 
             if (usuario != null)
             {
@@ -64,9 +67,10 @@ namespace ValidityControl.Controllers.v1
             }
 
             return NotFound();
-      
+
        
        
+
         }
 
 
@@ -85,4 +89,4 @@ namespace ValidityControl.Controllers.v1
 
 }
 
-    
+

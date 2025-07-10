@@ -8,6 +8,10 @@ namespace ValidityControl.DoMain.Models
         List<UsuarioModel> Get();
         UsuarioModel GetForId(int id);
         Task<bool> Delete(int id);
-        UsuarioModel GetByNameAndEmail(string name, string email);
+
+
+        UsuarioModel GetByNameAndPassword(string nome, string password);
+     
+
     }
 }
