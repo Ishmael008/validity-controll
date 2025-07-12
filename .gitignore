@@ -20,9 +20,11 @@ obj/
 
 # Ignora todos os JSONs exceto os que você quer manter
 # (como appsettings.json)
-*.json
-!appsettings.json
-!appsettings.Development.json
+
+- *.json
+- !appsettings.json
+- !appsettings.Development.json
+
 
 # Node.js
 node_modules/
@@ -32,4 +34,4 @@ Thumbs.db
 ehthumbs.db
 .DS_Store
 *.swp
-/Infraestrutura/Map/ProductControlMap.cs
+

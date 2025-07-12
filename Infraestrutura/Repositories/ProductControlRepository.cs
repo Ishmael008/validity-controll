@@ -19,7 +19,10 @@ namespace ValidityControl.Infraestrutura.Repositories
         private readonly AppDbContext _context;
 
 
-
+        public ProductControlRepository(AppDbContext context)
+        {
+            _context = context;
+        }
 
         public void Add(ProductControl productControl)
         {

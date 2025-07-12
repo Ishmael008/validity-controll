@@ -10,7 +10,7 @@ using ValidityControl.Infraestrutura;
 
 namespace ValidityControl.Migrations
 {
-    [DbContext(typeof(ConnetionContext))]
+    [DbContext(typeof(AppDbContext))]
     partial class ConnetionContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

@@ -11,7 +11,7 @@ using ValidityControl.Infraestrutura;
 
 namespace ValidityControl.Migrations
 {
-    [DbContext(typeof(ConnetionContext))]
+    [DbContext(typeof(AppDbContext))]
     [Migration("20250702013715_IntialFirstMigration")]
     partial class IntialFirstMigration
     {

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
 using System.Data;
 using System.Net.Http.Headers;
 using ValidityControl.Controllers;
@@ -16,9 +17,12 @@ namespace ValidityControl.Infraestrutura.Repositories
     {
         private readonly AppDbContext _connetion;
 
+        public UsuarioRespository(AppDbContext connetion) 
+        {
+            _connetion = connetion;
+        }
 
-
-        public void Add(UsuarioModel usuario)
+            public void Add(UsuarioModel usuario)
         {
 
             _connetion.usuarios.Add(usuario);

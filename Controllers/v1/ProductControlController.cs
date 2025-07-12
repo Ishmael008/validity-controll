@@ -11,20 +11,8 @@ using ValidityControl.Application.ViewModel;
 using ValidityControl.Application.ViewModel;
 using ValidityControl.DoMain.Models;
 using ValidityControl.DoMain;
-
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Routing;
-using Microsoft.EntityFrameworkCore;
-using System.Reflection.Metadata.Ecma335;
-using System.Threading;
-using ValidityControl.Application;
-using ValidityControl.Application.ViewModel;
-using ValidityControl.Application.ViewModel;
-using ValidityControl.DoMain;
-using ValidityControl.DoMain.Models;
+
 
 
 namespace ValidityControl.Controllers.v1

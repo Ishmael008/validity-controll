@@ -16,13 +16,11 @@ namespace ValidityControl.Controllers.Service
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-<<<<<<< HEAD
-                    new Claim ("usuarioId", usuarioModel.id.ToString())
-=======
+
+                    new Claim ("usuarioId", usuarioModel.id.ToString()),
                     new Claim ("usuarioName", usuarioModel.name.ToString()),
                     new Claim ("usuarioPassword", usuarioModel.password.ToString()),
 
->>>>>>> a3f0c3a (Atualização do projeto ValidityControl)
                 }),
                 Expires = DateTime.UtcNow.AddHours(3),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),

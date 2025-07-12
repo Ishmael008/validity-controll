@@ -93,12 +93,13 @@ internal class Program
 
 
 
+
         builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
 
-     
+
 
 
         builder.Services.AddCors(options =>
@@ -107,7 +108,7 @@ internal class Program
                 policy =>
                 {
 
-                    policy.WithOrigins("http://localhost:8082")
+                    policy.WithOrigins("http://localhost:8080")
 
 
                         .AllowAnyHeader()
@@ -138,8 +139,6 @@ internal class Program
         var app = builder.Build();
 
         var versionDescriptionProvider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
-
-
 
         if (app.Environment.IsDevelopment())
         {
