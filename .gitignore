@@ -32,3 +32,4 @@ Thumbs.db
 ehthumbs.db
 .DS_Store
 *.swp
+/Infraestrutura/Map/ProductControlMap.cs
