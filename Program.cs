@@ -79,14 +79,7 @@ internal class Program
         builder.Services.AddTransient<IProductControlRepository, ProductControlRepository>();
         builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwagguerOptions>();
 
-        builder.Services.AddHangfire(config =>
-            config.UsePostgreSqlStorage("Host=localhost;" +
-                "Port=5432;" +
-                "Database=postgres;" +
-                "User Id=postgres;" +
-                "Password=ishmael;" +
-                "Include Error Detail=true"));
-        builder.Services.AddHangfireServer();
+      
 
         // Autenticação JWT
         var key = Encoding.ASCII.GetBytes(Key.Secret);
@@ -94,8 +87,11 @@ internal class Program
 
 
 
-        builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+        var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+        builder.Services.AddHangfire(config =>
+            config.UsePostgreSqlStorage(connectionString));
+        builder.Services.AddHangfireServer();
 
 
 
