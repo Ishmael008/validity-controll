@@ -6,7 +6,8 @@ COPY ValidityControl.csproj ./
 RUN dotnet restore
 
 COPY . ./
-RUN dotnet publish -c Release -o /app/publish
+RUN dotnet publish ValidityControl.csproj -c Release -o /app/publish
+
 
 # Etapa 2: runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
