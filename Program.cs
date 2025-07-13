@@ -89,10 +89,16 @@ internal class Program
 
         var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
+        builder.Services.AddDbContext<AppDbContext>(options =>
+            options.UseNpgsql(connectionString));
+
         builder.Services.AddHangfire(config =>
             config.UsePostgreSqlStorage(connectionString));
+
         builder.Services.AddHangfireServer();
 
+        var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+        builder.WebHost.UseUrls($"http://*:{port}");
 
 
 
@@ -104,7 +110,11 @@ internal class Program
                 policy =>
                 {
 
-                    policy.WithOrigins("http://localhost:8080")
+                    policy.WithOrigins("http://localhost:8080",
+                        "http://localhost:8080/validity-control-frontend/"
+
+
+                        )
 
 
                         .AllowAnyHeader()
