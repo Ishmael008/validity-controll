@@ -147,18 +147,19 @@ internal class Program
 
         var versionDescriptionProvider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
 
+        app.UseSwagger();
+        app.UseSwaggerUI(options =>
+        {
+            foreach (var description in versionDescriptionProvider.ApiVersionDescriptions)
+            {
+                options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json",
+                    $"ValidyControl - {description.GroupName.ToUpper()}");
+            }
+        });
+
         if (app.Environment.IsDevelopment())
         {
             app.UseExceptionHandler("/erro-development");
-            app.UseSwagger();
-            app.UseSwaggerUI(options =>
-            {
-                foreach (var description in versionDescriptionProvider.ApiVersionDescriptions)
-                {
-                    options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json",
-                        $"ValidyControl - {description.GroupName.ToUpper()}");
-                }
-            });
         }
         else
         {
