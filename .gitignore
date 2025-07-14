@@ -18,13 +18,10 @@ obj/
 *.mdf
 *.ldf
 
-# Ignora todos os JSONs exceto os que você quer manter
-# (como appsettings.json)
-
-- *.json
-- !appsettings.json
-- !appsettings.Development.json
-
+# Ignora todos os JSONs exceto os de configuração
+*.json
+!appsettings.json
+!appsettings.Development.json
 
 # Node.js
 node_modules/
@@ -34,4 +31,3 @@ Thumbs.db
 ehthumbs.db
 .DS_Store
 *.swp
-
