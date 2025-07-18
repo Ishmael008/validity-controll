@@ -50,7 +50,7 @@ namespace ValidityControl.Controllers.v1
 
 
 
-
+        [Authorize]
         [HttpGet("validar")]
         public IActionResult Get()
         {
