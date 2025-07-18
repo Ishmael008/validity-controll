@@ -66,7 +66,7 @@ namespace ValidityControl.Controllers.v1
                 return Ok(true);
             }
 
-            return NotFound();
+            else return NotFound();
 
        
        
