@@ -29,32 +29,27 @@ namespace ValidityControl.Controllers.v1
         [HttpPost]
         public IActionResult Add([FromForm] UsuarioModelViewModel usuarioViewModel)
         {
+            if (usuarioViewModel == null)
+                return BadRequest("Dados inválidos.");
 
+            if (string.IsNullOrEmpty(usuarioViewModel.Name))
+                return BadRequest("O campo name é obrigatório");
+
+            if (string.IsNullOrEmpty(usuarioViewModel.Password))
+                return BadRequest("O campo password é obrigatório");
 
             var usuario = new UsuarioModel(usuarioViewModel.Name, usuarioViewModel.Password);
 
             _usuarioRepository.Add(usuario);
 
-            if (usuario == null)
-                return BadRequest("Usuário não pode ser nulo");
-
-            if (string.IsNullOrEmpty(usuario.name))
-                return BadRequest("O campo name é obrigatório");
-
-
-            if (string.IsNullOrEmpty(usuario.password))
-                return BadRequest("O campo name é obrigatório");
-
             return Ok(new { message = "Usuário cadastrado com sucesso!" });
-
-
         }
 
 
 
-        
 
-    
+
+
 
         [HttpGet("validar")]
         public IActionResult Get()
