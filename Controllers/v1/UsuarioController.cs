@@ -61,12 +61,7 @@ namespace ValidityControl.Controllers.v1
         {
             var usuario = _usuarioRepository.Get();
 
-            if (usuario != null)
-            {
-                return Ok(true);
-            }
-
-            else return NotFound();
+            return Ok(usuario);
 
        
        
