@@ -32,7 +32,7 @@ namespace ValidityControl.Controllers
        
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginViewModel login)
+        public IActionResult Login([FromForm] LoginViewModel login)
         {
             var usuario = _usuarioRepository.GetByNameAndPassword(login.Name, login.Password);
 
