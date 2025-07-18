@@ -85,14 +85,14 @@ namespace ValidityControl.Controllers.v1
         [HttpGet("products-today")]
         public IEnumerable<ProductControlViewModel> GetAll()
         {
-            var hoje = DateTime.UtcNow.Date;
+            var today = DateTime.UtcNow.Date;
 
             return _productcontrolrepository.GetProductsToday()
-                .Where(p => p.Validity >= hoje)
+                .Where(p => p.Validity >= today)
 
                 .OrderBy(p => p.Validity)       
 
-                .OrderBy(p => p.Validity)
+             
 
                 .Select(p => new ProductControlViewModel(p))
                 .ToList();

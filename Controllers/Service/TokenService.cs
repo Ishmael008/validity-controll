@@ -17,7 +17,7 @@ namespace ValidityControl.Controllers.Service
                 Subject = new ClaimsIdentity(new Claim[]
                 {
 
-                    new Claim ("usuarioId", usuarioModel.id.ToString()),
+                
                     new Claim ("usuarioName", usuarioModel.name.ToString()),
                     new Claim ("usuarioPassword", usuarioModel.password.ToString()),
 
