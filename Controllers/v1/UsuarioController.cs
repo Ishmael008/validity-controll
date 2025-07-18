@@ -27,7 +27,7 @@ namespace ValidityControl.Controllers.v1
 
 
         [HttpPost]
-        public IActionResult Add(UsuarioModelViewModel usuarioViewModel)
+        public IActionResult Add([FromBody]UsuarioModelViewModel usuarioViewModel)
         {
 
 
