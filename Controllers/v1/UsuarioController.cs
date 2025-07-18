@@ -57,9 +57,9 @@ namespace ValidityControl.Controllers.v1
     
 
         [HttpGet("validar")]
-        public IActionResult Validar(string name, string password)
+        public IActionResult Get()
         {
-            var usuario = _usuarioRepository.GetByNameAndPassword(name, password);
+            var usuario = _usuarioRepository.Get();
 
             if (usuario != null)
             {
