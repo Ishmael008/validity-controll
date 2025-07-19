@@ -38,7 +38,6 @@ namespace ValidityControl.Controllers.v1
 
 
 
-        [Authorize]
         [HttpPost]
         public IActionResult Post([FromBody] ProductControlCreateViewModel viewModel)
         {
