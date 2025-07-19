@@ -22,6 +22,7 @@ namespace ValidityControl.Application.ViewModel
      
 
             daysToMatury = (productControl.Validity.Date - DateTime.UtcNow.Date).Days;
+            description = productControl.description;
        
         }
 
