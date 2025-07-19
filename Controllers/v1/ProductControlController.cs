@@ -48,34 +48,40 @@ namespace ValidityControl.Controllers.v1
             Console.WriteLine($"Validade: {viewModel.validity}");
             Console.WriteLine($"Descrição: {viewModel.description}");
             */
-
-            if (!ModelState.IsValid)
+            try
             {
-                var erros = ModelState.Values
-                    .SelectMany(v => v.Errors)
-                    .Select(e => e.ErrorMessage)
-                    .ToList();
+                if (!ModelState.IsValid)
+                {
+                    var erros = ModelState.Values
+                        .SelectMany(v => v.Errors)
+                        .Select(e => e.ErrorMessage)
+                        .ToList();
 
-                Console.WriteLine("Erros de validação:");
-                erros.ForEach(e => Console.WriteLine($"- {e}"));
+                    Console.WriteLine("Erros de validação:");
+                    erros.ForEach(e => Console.WriteLine($"- {e}"));
 
-                return BadRequest(new { Erros = erros });
+                    return BadRequest(new { Erros = erros });
+                }
+                var produtoExistente = _productcontrolrepository
+                .GetProductsToday()
+                .FirstOrDefault(p => p.ean == viewModel.eanOfProduct);
+
+                var entity = new ProductControl(viewModel.eanOfProduct, viewModel.nameOfProduct, viewModel.validity, viewModel.description)
+                {
+                    ean = viewModel.eanOfProduct,
+                    name = viewModel.nameOfProduct,
+                    Validity = viewModel.validity,
+                    description = viewModel.description
+                };
+
+
+                _productcontrolrepository.Add(entity);
+
+                return Ok();
+            }catch (Exception ex)
+            {
+                return StatusCode(500, $"erro interno:{ex.Message}");
             }
-            var produtoExistente = _productcontrolrepository
-            .GetProductsToday()
-            .FirstOrDefault(p => p.ean == viewModel.eanOfProduct);
-
-            var entity = new ProductControl(viewModel.eanOfProduct, viewModel.nameOfProduct, viewModel.validity, viewModel.description)
-            {
-                ean = viewModel.eanOfProduct,
-                name = viewModel.nameOfProduct,
-                Validity = viewModel.validity,
-                description = viewModel.description
-            };
-
-            _productcontrolrepository.Add(entity);
-
-            return Ok();
         }
       
 
