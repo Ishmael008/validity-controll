@@ -24,24 +24,35 @@ namespace ValidityControl.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    
     public class AuthController : ControllerBase
     {
-
         private readonly IUsuarioRepository _usuarioRepository;
 
-       
+        public AuthController(IUsuarioRepository usuarioRepository)
+        {
+            _usuarioRepository = usuarioRepository;
+        }
 
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginViewModel login)
         {
-            var usuario = _usuarioRepository.GetByNameAndPassword(login.Name, login.Password);
+            try
+            {
+                var usuario = _usuarioRepository.GetByNameAndPassword(login.Name, login.Password);
 
-            if (usuario == null)
-                return Unauthorized("Credenciais inválidas");
+                if (usuario == null)
+                    return Unauthorized("Credenciais inválidas");
 
-            var token = TokenService.GenerateToken(usuario);
-            return Ok(token);
- 
+                var token = TokenService.GenerateToken(usuario);
+
+                return Ok(new { token });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro interno: {ex.Message}");
+            }
         }
     }
+
 }
