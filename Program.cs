@@ -112,7 +112,7 @@ internal class Program
                 {
 
                     policy.WithOrigins("http://localhost:8080",
-                        "http://localhost:8080/validity-control-frontend/"
+                        "https://controlandovalidades.netlify.app/#/"
 
 
                         )
