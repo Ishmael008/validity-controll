@@ -112,7 +112,7 @@ internal class Program
                 {
 
                     policy.WithOrigins("http://localhost:8080",
-                        "https://controlandovalidades.netlify.app/#/"
+                        "https://controlandovalidades.netlify.app"
 
 
                         )
