@@ -28,10 +28,12 @@ namespace ValidityControl.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IUsuarioRepository _usuarioRepository;
+        public readonly ILogger<AuthController> _logger;
 
-        public AuthController(IUsuarioRepository usuarioRepository)
+        public AuthController(IUsuarioRepository usuarioRepository, ILogger<AuthController> logger)
         {
             _usuarioRepository = usuarioRepository;
+            _logger = logger;
         }
 
         [HttpPost("login")]
@@ -50,7 +52,7 @@ namespace ValidityControl.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"Erro interno: {ex.Message}");
+                return StatusCode(500, "O sistema está desconectado. Tente mais tarde!");
             }
         }
     }
