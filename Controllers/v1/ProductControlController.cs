@@ -39,7 +39,7 @@ namespace ValidityControl.Controllers.v1
 
 
         [HttpPost]
-        public IActionResult Post([FromBody] ProductControlCreateViewModel viewModel)
+        public async Task<ActionResult<ProductControl>> Post([FromBody] ProductControlCreateViewModel viewModel)
         {
             //check functionality
             /*Console.WriteLine("Recebido no backend:");
@@ -63,7 +63,7 @@ namespace ValidityControl.Controllers.v1
                     return BadRequest(new { Erros = erros });
                 }
                 var produtoExistente = _productcontrolrepository
-                .GetProductsToday()
+                .GetProducts()
                 .FirstOrDefault(p => p.ean == viewModel.eanOfProduct);
 
                 var entity = new ProductControl(viewModel.eanOfProduct, viewModel.nameOfProduct, viewModel.validity, viewModel.description)
@@ -75,7 +75,7 @@ namespace ValidityControl.Controllers.v1
                 };
 
 
-                _productcontrolrepository.Add(entity);
+                await _productcontrolrepository.Add(entity);
 
                 return Ok();
             }catch (Exception ex)
@@ -87,12 +87,12 @@ namespace ValidityControl.Controllers.v1
 
 
 
-        [HttpGet("products-today")]
-        public IEnumerable<ProductControlViewModel> GetAll()
+        [HttpGet("products")]
+        public  IEnumerable<ProductControlViewModel> GetAll()
         {
             var today = DateTime.UtcNow.Date;
 
-            return _productcontrolrepository.GetProductsToday()
+            return _productcontrolrepository.GetProducts()
                 .Where(p => p.Validity >= today)
 
                 .OrderBy(p => p.Validity)       

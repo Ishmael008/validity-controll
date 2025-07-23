@@ -24,10 +24,10 @@ namespace ValidityControl.Infraestrutura.Repositories
             _context = context;
         }
 
-        public void Add(ProductControl productControl)
+        public async Task Add(ProductControl productControl)
         {
             _context.productControls.Add(productControl);
-            _context.SaveChanges();
+            await _context.SaveChangesAsync ();
 
         }
         public async Task<ProductControl> GetForEan(string ean)
@@ -35,7 +35,7 @@ namespace ValidityControl.Infraestrutura.Repositories
             return await _context.productControls.FirstOrDefaultAsync(x => x.ean == ean);
         }
 
-        public List<ProductControl> GetProductsToday()
+        public List<ProductControl> GetProducts()
         {
 
             return _context.productControls.ToList();
@@ -48,7 +48,7 @@ namespace ValidityControl.Infraestrutura.Repositories
             ProductControl productControl = await GetForEan(ean);
 
             _context.productControls.Remove(productControl);
-            _context.SaveChanges();
+           await _context.SaveChangesAsync();
             return true;
         }
         public bool ExistsbyGet(string ean)
@@ -59,7 +59,7 @@ namespace ValidityControl.Infraestrutura.Repositories
            
         }
 
-        public void RemoveProduct()
+        public async Task RemoveProduct()
         {
             var today = DateTime.UtcNow.Date;
             var matury = _context.productControls
@@ -70,8 +70,8 @@ namespace ValidityControl.Infraestrutura.Repositories
             if (matury.Any())
 
             {
-                _context.productControls.RemoveRange(matury);
-                _context.SaveChanges();
+                 _context.productControls.RemoveRange(matury);
+                await _context.SaveChangesAsync();
             }
         }
     }

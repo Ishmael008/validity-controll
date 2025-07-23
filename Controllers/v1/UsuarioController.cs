@@ -29,21 +29,24 @@ namespace ValidityControl.Controllers.v1
         [HttpPost]
         public IActionResult Add([FromForm] UsuarioModelViewModel usuarioViewModel)
         {
-            if (usuarioViewModel == null)
-                return BadRequest("Dados inválidos.");
+             if (usuarioViewModel == null)
+                    return BadRequest("Dados inválidos.");
 
-            if (string.IsNullOrEmpty(usuarioViewModel.Name))
-                return BadRequest("O campo name é obrigatório");
+                if (string.IsNullOrEmpty(usuarioViewModel.Name))
+                    return BadRequest("O campo name é obrigatório");
 
-            if (string.IsNullOrEmpty(usuarioViewModel.Password))
-                return BadRequest("O campo password é obrigatório");
+                if (string.IsNullOrEmpty(usuarioViewModel.Password))
+                    return BadRequest("O campo password é obrigatório");
 
-            var usuario = new UsuarioModel(usuarioViewModel.Name, usuarioViewModel.Password);
+                var usuario = new UsuarioModel(usuarioViewModel.Name, usuarioViewModel.Password);
 
-            _usuarioRepository.Add(usuario);
+                _usuarioRepository.Add(usuario);
 
-            return Ok(new { message = "Usuário cadastrado com sucesso!" });
-        }
+                return Ok(new { message = "Usuário cadastrado com sucesso!" });
+          
+        } 
+    
+    
 
 
 
@@ -53,11 +56,12 @@ namespace ValidityControl.Controllers.v1
         [HttpGet("validar")]
         public IActionResult Get()
         {
-            var usuario = _usuarioRepository.Get();
+            {
+                var usuario = _usuarioRepository.Get();
 
-            return Ok(usuario);
+                return Ok(usuario);
 
-       
+            }
        
 
         }

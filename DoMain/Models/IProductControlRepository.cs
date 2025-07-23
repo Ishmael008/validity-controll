@@ -5,13 +5,13 @@ namespace ValidityControl.DoMain.Models
     public interface IProductControlRepository
     {
 
-        void Add(ProductControl productControl);
+        Task Add(ProductControl productControl);
 
-        List<ProductControl> GetProductsToday();
+        List<ProductControl> GetProducts();
 
         Task<ProductControl> GetForEan(string ean);
         Task<bool> Delete(string ean);
         bool ExistsbyGet(string ean);
-        void RemoveProduct();
+        Task RemoveProduct();
     }
 }

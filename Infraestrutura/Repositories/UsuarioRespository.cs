@@ -22,11 +22,11 @@ namespace ValidityControl.Infraestrutura.Repositories
             _connetion = connetion;
         }
 
-            public void Add(UsuarioModel usuario)
+            public async Task  Add(UsuarioModel usuario)
         {
 
             _connetion.usuarios.Add(usuario);
-            _connetion.SaveChanges();
+           await _connetion.SaveChangesAsync();
         }
 
 
@@ -34,7 +34,7 @@ namespace ValidityControl.Infraestrutura.Repositories
         {
             UsuarioModel usuarioModel = GetForId(id);
             _connetion.Remove(usuarioModel);
-            _connetion.SaveChanges();
+            await _connetion.SaveChangesAsync();
             return true;
         }
 
@@ -51,9 +51,9 @@ namespace ValidityControl.Infraestrutura.Repositories
 
 
         
-        public UsuarioModel GetByNameAndPassword(string name, string password)
+        public async Task<UsuarioModel> GetByNameAndPassword(string name, string password)
         {
-            return _connetion.usuarios.FirstOrDefault(u => u.name == name && u.password == password);
+            return  await _connetion.usuarios.FirstOrDefaultAsync(u => u.name == name && u.password == password);
 
         }
 

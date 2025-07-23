@@ -37,14 +37,15 @@ namespace ValidityControl.Controllers
         }
 
         [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginViewModel login)
+        public async Task<ActionResult<UsuarioModel>> Login([FromBody] LoginViewModel login)
         {
             try
             {
-                var usuario = _usuarioRepository.GetByNameAndPassword(login.Name, login.Password);
+                var usuario = await _usuarioRepository.GetByNameAndPassword(login.Name, login.Password);
 
                 if (usuario == null)
-                    return Unauthorized("Credenciais inválidas");
+                    return Unauthorized
+                        ("Credenciais inválidas");
 
                 var token = TokenService.GenerateToken(usuario);
 
