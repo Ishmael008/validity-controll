@@ -24,14 +24,16 @@ namespace ValidityControl.Controllers.v1
     public class ProductControlController : ControllerBase
     {
         private readonly IProductControlRepository _productcontrolrepository;
+        private readonly IProductFeedbackRepository _productfeedbackrepository;
         private readonly ILogger<ProductControlController> _logger;
 
 
 
-        public ProductControlController(IProductControlRepository productcontrolrepository, ILogger<ProductControlController> logger)
+        public ProductControlController(IProductControlRepository productcontrolrepository, ILogger<ProductControlController> logger, IProductFeedbackRepository productfeedbackrepository)
         {
             _productcontrolrepository = productcontrolrepository ?? throw new ArgumentNullException(nameof(productcontrolrepository));
             _logger = logger;
+            _productfeedbackrepository = productfeedbackrepository;
         }
 
 
@@ -83,7 +85,23 @@ namespace ValidityControl.Controllers.v1
                 return StatusCode(500, $"erro interno:{ex.Message}");
             }
         }
-      
+
+        [HttpPost]
+        public async Task<IActionResult> PostFeedback([FromBody] ProductFeedbackViewModel feedback)
+        {
+            var productFeedback = new ProductFeedback(feedback.EanOfProduct, feedback.QuestionOfProduct1, feedback.QuestionOfProduct2, feedback.CreatedAtProduct)
+            {
+                Ean = feedback.EanOfProduct,
+                Question1 = feedback.QuestionOfProduct1,
+                Question2 = feedback.QuestionOfProduct2,
+                CreatedAt = feedback.CreatedAtProduct
+            };
+
+            await _productfeedbackrepository.AddFeedbackAsync(productFeedback);
+            return Ok(new { message = "Feedback enviado com sucesso." });
+        }
+
+
 
 
 

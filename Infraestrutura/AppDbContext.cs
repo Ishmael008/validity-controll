@@ -10,8 +10,8 @@ namespace ValidityControl.Infraestrutura
     {
         public DbSet<UsuarioModel> usuarios { get; set; }
         public DbSet<ProductControl> productControls { get; set; }
-
-
+        public DbSet<ProductFeedback> productFeedbacks { get; set; }
+    
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
            

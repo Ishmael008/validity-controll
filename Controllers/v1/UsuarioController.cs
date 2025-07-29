@@ -27,7 +27,7 @@ namespace ValidityControl.Controllers.v1
 
 
         [HttpPost]
-        public IActionResult Add([FromForm] UsuarioModelViewModel usuarioViewModel)
+        public  async Task<IActionResult> Add([FromForm] UsuarioModelViewModel usuarioViewModel)
         {
              if (usuarioViewModel == null)
                     return BadRequest("Dados inválidos.");
@@ -40,7 +40,7 @@ namespace ValidityControl.Controllers.v1
 
                 var usuario = new UsuarioModel(usuarioViewModel.Name, usuarioViewModel.Password);
 
-                _usuarioRepository.Add(usuario);
+                await _usuarioRepository.Add(usuario);
 
                 return Ok(new { message = "Usuário cadastrado com sucesso!" });
           

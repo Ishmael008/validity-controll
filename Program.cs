@@ -79,6 +79,8 @@ internal class Program
         });
         builder.Services.AddTransient<IUsuarioRepository, UsuarioRespository>();
         builder.Services.AddTransient<IProductControlRepository, ProductControlRepository>();
+        builder.Services.AddTransient<IProductFeedbackRepository, ProductFeedbackRepostory>();
+
         builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwagguerOptions>();
 
       

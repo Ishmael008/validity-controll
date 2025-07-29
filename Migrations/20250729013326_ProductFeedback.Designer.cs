@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using ValidityControl.Infraestrutura;
@@ -11,9 +12,11 @@ using ValidityControl.Infraestrutura;
 namespace ValidityControl.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250729013326_ProductFeedback")]
+    partial class ProductFeedback
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -42,31 +45,6 @@ namespace ValidityControl.Migrations
                     b.HasKey("ean");
 
                     b.ToTable("ProductControl");
-                });
-
-            modelBuilder.Entity("ValidityControl.DoMain.Models.ProductFeedback", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime?>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Ean")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Question1")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Question2")
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ProductFeedback");
                 });
 
             modelBuilder.Entity("ValidityControl.DoMain.Models.UsuarioModel", b =>
