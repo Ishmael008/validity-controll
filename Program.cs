@@ -176,7 +176,7 @@ internal class Program
 
 
 
-        app.UseHangfireDashboard();
+     
 
 
         RecurringJob.AddOrUpdate<IProductControlRepository>(
