@@ -86,7 +86,7 @@ namespace ValidityControl.Controllers.v1
             }
         }
 
-        [HttpPost]
+        [HttpPost("feedback")]
         public async Task<IActionResult> PostFeedback([FromBody] ProductFeedbackViewModel feedback)
         {
             var productFeedback = new ProductFeedback(feedback.EanOfProduct, feedback.QuestionOfProduct1, feedback.QuestionOfProduct2, feedback.CreatedAtProduct)
