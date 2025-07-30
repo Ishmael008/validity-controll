@@ -97,7 +97,7 @@ namespace ValidityControl.Controllers.v1
                 CreatedAt = feedback.CreatedAtProduct
             };
 
-            await _productfeedbackrepository.AddFeedbackAsync(productFeedback);
+            await _productfeedbackrepository.Add(productFeedback);
             return Ok(new { message = "Feedback enviado com sucesso." });
         }
 

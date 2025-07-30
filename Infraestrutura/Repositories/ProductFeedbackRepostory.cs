@@ -12,7 +12,7 @@ namespace ValidityControl.Infraestrutura.Repositories
             _AppDbContext = appDbContext;
         }
 
-        public async Task AddFeedbackAsync(ProductFeedback feedback)
+        public async Task Add(ProductFeedback feedback)
         {
             _AppDbContext.productFeedbacks.Add(feedback);
             await _AppDbContext.SaveChangesAsync();

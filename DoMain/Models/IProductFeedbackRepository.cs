@@ -3,7 +3,7 @@
     public interface IProductFeedbackRepository
     {
 
-        Task AddFeedbackAsync(ProductFeedback feedback);
+        Task Add(ProductFeedback feedback);
       
     }
 }
