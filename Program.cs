@@ -14,11 +14,7 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Hangfire;
 using Hangfire.PostgreSql;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
-using System.Text;
+
 using Microsoft.EntityFrameworkCore;
 using ValidityControl.Infraestrutura;
 
@@ -30,7 +26,7 @@ internal class Program
 
         var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
         builder.WebHost.UseUrls($"http://*:{port}");
-        // Add services to the container
+
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
 
@@ -77,20 +73,14 @@ internal class Program
             setup.GroupNameFormat = "'v'VVV";
             setup.SubstituteApiVersionInUrl = true;
         });
+
         builder.Services.AddTransient<IUsuarioRepository, UsuarioRespository>();
         builder.Services.AddTransient<IProductControlRepository, ProductControlRepository>();
         builder.Services.AddTransient<IProductFeedbackRepository, ProductFeedbackRepostory>();
 
         builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwagguerOptions>();
 
-      
-
-        // Autenticação JWT
         var key = Encoding.ASCII.GetBytes(Key.Secret);
-
-
-
-
         var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
         builder.Services.AddDbContext<AppDbContext>(options =>
@@ -101,25 +91,13 @@ internal class Program
 
         builder.Services.AddHangfireServer();
 
-       
-
-
-
-
-
         builder.Services.AddCors(options =>
         {
             options.AddPolicy(name: "MyPolicy",
                 policy =>
                 {
-
                     policy.WithOrigins("http://localhost:8080",
-                        "https://controlandovalidades.netlify.app"
-
-
-                        )
-
-
+                        "https://controlandovalidades.netlify.app")
                         .AllowAnyHeader()
                         .AllowAnyMethod();
                 });
@@ -135,9 +113,7 @@ internal class Program
             x.SaveToken = true;
             x.TokenValidationParameters = new TokenValidationParameters
             {
-
                 ValidateLifetime = true,
-
                 ValidateIssuerSigningKey = true,
                 IssuerSigningKey = new SymmetricSecurityKey(key),
                 ValidateIssuer = false,
@@ -174,11 +150,6 @@ internal class Program
         app.UseAuthorization();
         app.UseHangfireDashboard();
 
-
-
-     
-
-
         RecurringJob.AddOrUpdate<IProductControlRepository>(
             "Remove-products",
             repo => repo.RemoveProduct(),
@@ -189,6 +160,4 @@ internal class Program
         app.Run();
     }
 }
-
-
 
