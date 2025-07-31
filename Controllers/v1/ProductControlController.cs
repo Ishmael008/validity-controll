@@ -89,6 +89,7 @@ namespace ValidityControl.Controllers.v1
         [HttpPost("feedback")]
         public async Task<IActionResult> PostFeedback([FromBody] ProductFeedbackViewModel feedback)
         {
+
             var productFeedback = new ProductFeedback(feedback.EanOfProduct, feedback.QuestionOfProduct1, feedback.QuestionOfProduct2, feedback.CreatedAtProduct)
             {
                 Ean = feedback.EanOfProduct,
@@ -121,6 +122,13 @@ namespace ValidityControl.Controllers.v1
                 .ToList();
         }
 
+        [HttpPut("Update")]
+        public async Task<ActionResult<ProductControl>> UpdateProduct([FromBody] string ean)
+        {
+          var upadate =   _productcontrolrepository.Update(ean);
+            return Ok(upadate);
+
+        }
         [HttpDelete]
         public async Task<ActionResult<ProductControl>> Delete(string ean)
         {

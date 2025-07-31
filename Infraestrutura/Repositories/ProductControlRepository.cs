@@ -74,5 +74,13 @@ namespace ValidityControl.Infraestrutura.Repositories
                 await _context.SaveChangesAsync();
             }
         }
+
+        public async Task Update(string ean)
+        {
+           ProductControl product = await GetForEan(ean);
+             _context.productControls.Update(product);
+            await _context.SaveChangesAsync();
+            
+        }
     }
 }

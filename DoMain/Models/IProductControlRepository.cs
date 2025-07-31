@@ -8,7 +8,7 @@ namespace ValidityControl.DoMain.Models
         Task Add(ProductControl productControl);
 
         List<ProductControl> GetProducts();
-
+        Task Update(string ean);
         Task<ProductControl> GetForEan(string ean);
         Task<bool> Delete(string ean);
         bool ExistsbyGet(string ean);
