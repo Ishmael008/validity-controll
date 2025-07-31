@@ -15,6 +15,7 @@ using ValidityControl.DoMain.Models;
 using ValidityControl.Infraestrutura.Repositories;
 using ValidityControl.Swagguer;
 using ValidityControl;
+using ValidityControl.Application.ViewModel;
 
 internal class Program
 {
@@ -138,6 +139,11 @@ internal class Program
                 ValidateAudience = false
             };
         });
+        builder.Services
+    .AddControllers()
+    .AddJsonOptions(x =>
+        x.JsonSerializerOptions.Converters.Add(new JsonDateTimeConverter()));
+
 
         var app = builder.Build();
 
