@@ -126,7 +126,7 @@ namespace ValidityControl.Controllers.v1
         public async Task<ActionResult<ProductControl>> UpdateProduct(ProductControl product, string ean)
         {
             product.ean = ean;
-          var upadate =  _productcontrolrepository.Update(ean);
+          var upadate =  _productcontrolrepository.Update(product, ean);
             return Ok(upadate);
 
         }

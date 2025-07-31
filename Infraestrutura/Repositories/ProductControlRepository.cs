@@ -4,6 +4,7 @@ using ValidityControl.Controllers;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using ValidityControl.DoMain;
 using System.Linq.Dynamic.Core;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 
 
@@ -75,11 +76,19 @@ namespace ValidityControl.Infraestrutura.Repositories
             }
         }
 
-        public async Task Update(string ean)
+        public async Task<ProductControl> Update(ProductControl product, string ean)
         {
-           ProductControl product = await GetForEan(ean);
-             _context.productControls.Update(product);
+           ProductControl productcontrol = await GetForEan(ean);
+            productcontrol.ean = product.ean;
+            productcontrol.name = product.name;
+            productcontrol.Validity = product.Validity;
+            productcontrol.description = product.description;
+           
+            _context.productControls.Update(productcontrol);
+            
             await _context.SaveChangesAsync();
+
+            return product;
             
         }
     }
