@@ -125,9 +125,9 @@ namespace ValidityControl.Controllers.v1
         [HttpPut("{ean}")]
         public async Task<ActionResult<ProductControl>> UpdateProduct(ProductControl product, string ean)
         {
-            product.ean = ean;
-          var upadate =  _productcontrolrepository.Update(product, ean);
-            return Ok(upadate);
+          product.ean = ean;
+         ProductControl productcontrol = await _productcontrolrepository.Update(product, ean);
+            return Ok(productcontrol);
 
         }
         [HttpDelete]
