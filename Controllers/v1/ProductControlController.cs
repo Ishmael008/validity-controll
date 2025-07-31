@@ -122,7 +122,7 @@ namespace ValidityControl.Controllers.v1
                 .ToList();
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("{ean}")]
         public async Task<ActionResult<ProductControl>> UpdateProduct(ProductControl product, string ean)
         {
             product.ean = ean;
